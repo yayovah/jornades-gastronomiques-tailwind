@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <link rel="stylesheet" type="text/css" href="./assets/styles/main.scss"><!-- do not remove this line! -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Comforter&family=Overlock:ital,wght@0,400;0,700;0,900;1,400;1,700;1,900&family=Playwrite+NO:wght@100..400&display=swap"
+        rel="stylesheet">
+    <title>Contacte - Foc a Terra</title>
+</head>
+
+<body>
+    <include src="./views/header.html"></include>
+    <main>
+        <div class="container d-flex flex-column w-md-50 align-items-center">
+            <h2 class="u-brillant"> Inscriu-te al taller</h2>
+            <form name="contact" method="POST" data-netlify="true" class="u-brillant  o-formulari" netlify>
+                <div class="mb-3">
+                    <label>Taller: </label>
+                    <select class="form-control" type="text" name="taller">
+                        <option value="romescos">Taller de romescos</option>
+                        <option value="allioli">Taller d'allioli</option>
+                        <option value="casolana">Xerrada sobre la cuina casolana</option>
+                        <option value="mediterrania">Xerrada Dieta mediterrània</option>
+                        <option value="del camp">Som lo que sembrem</option>
+                        <option value="suquets">Taller de suquets de peix</option>
+                    </select>
+                </div>
+                <div class="mb-3">
+                    <label>Nom: </label>
+                    <input class="form-control" type="text" name="nom" placeholder="Escriu el teu nom" />
+                </div>
+                <div class="mb-3">
+                    <label class="form-label">email: </label>
+                    <input class="form-control" type="email" name="email" placeholder="Escriu el teu nom" />
+                </div>
+                <div class="mb-3">
+                    <label>Missatge: </label>
+                    <textarea class="form-control" name="message"></textarea>
+                </div>
+                <div class="mb-3">
+                    <button class="btn btn-secondary mb-3 w-50 u-brillant" type="submit">Send</button>
+                </div>
+            </form>
+
+        </div>
+    </main>
+    <include src="./views/footer.html"></include>
+    <script type="module" src="./assets/scripts/main.js"></script><!-- do not remove this line! -->
+</body>
+
+</html>

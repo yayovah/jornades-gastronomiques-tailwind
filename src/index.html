@@ -1,27 +1,35 @@
 <!DOCTYPE html>
 
 <html>
-  <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width">
-    <link rel="stylesheet" type="text/css" href="./assets/styles/main.scss"><!-- do not remove this line! -->
-    <title>UOC Boilerplate</title>
-  </head>
-  <body>
-    <div class="uoc-container">
-      <picture>
-        <source srcset="./assets/images/logo.png?as=webp&width=350" type="image/webp" />
-        <img src="./assets/images/logo.png?width=350" alt="Universitat Oberta de Catalunya" class="uoc-logo" />
-      </picture>
-      <h1 class="uoc-title">Hello, UOC!</h1>
-      <p>
-        This is a starter template for the Advanced HTML and CSS Tools courses
-        from the Master's Program in Multimedia Applications and the Master's
-        Program in Web App and Website Development at the Universitat Oberta de
-        Catalunya.
-      </p>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" type="text/css" href="./assets/styles/main.scss"><!-- do not remove this line! -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Comforter&family=Overlock:ital,wght@0,400;0,700;0,900;1,400;1,700;1,900&family=Playwrite+NO:wght@100..400&display=swap"
+    rel="stylesheet">
+  <title>Portada - Foc a Terra</title>
+</head>
+
+<body class="bg-light-500 p-6 mx-auto flex justify-center w-full">
+  <div class="container flex flex-col item-center justify-center space-y-12">
+    <div class="flex p-6 mx-auto">
+      <include src="./views/logo.html"></include>
     </div>
-    <include src="./views/footer.html"></include>
-    <script type="module" src="./assets/scripts/main.js"></script><!-- do not remove this line! -->
-  </body>
+    <a href="blog.html">
+      <div class="flex w-xl p-6 mx-auto rounded-xl shadow-lg text-zinc-500 bg-gray-100 border border-black hover:border-indigo-500 hover:shadow-[#859022] text-2xl text-bold ">
+        Blog
+      </div>
+    </a>
+    <a href="ponents.html" class="group flex w-xl p-6 mx-auto rounded-xl shadow-lg text-zinc-500 bg-gray-100 border border-black hover:border-indigo-500 hover:shadow-[#859022]">
+        <h2 class="text-2xl text-bold group-hover:text-black">Ponents</h2>
+    </a>
+    <div class="w-full m-3 p-5 border"></div>
+  </div>
+  <script type="module" src="./assets/scripts/main.js"></script><!-- do not remove this line! -->
+</body>
+
 </html>

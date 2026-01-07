@@ -1,0 +1,20 @@
+ <div class="container flex flex-col md:w-2xl mx-auto text-left mb-6">
+    <h2 class="text-light-500 text-center p-4 text-3xl font-a-ma my-4"> Deixa'ns el teu missatge </h2>
+    <form name="contacte" method="POST" data-netlify="true" class="text-light flex flex-col gap-3">
+      <div class="mb-3 flex flex-col items-left">
+        <label>Nom: </label>
+        <input class="w-full bg-white rounded-sm p-1 text-dark-500" type="text" name="name" placeholder="Escriu el teu nom" />
+      </div>
+      <div class="mb-3 flex flex-col items-left">
+        <label class="form-label">email: </label>
+        <input class="w-full bg-white rounded-sm p-1 text-dark-500" type="email" name="email" placeholder="Escriu el teu email" />
+      </div>
+      <div class="mb-3 flex flex-col items-left">
+        <label>Missatge: </label>
+        <textarea class="w-full bg-white rounded-sm p-1 text-dark-500" name="message"></textarea>
+      </div>
+      <div class="mb-3">
+        <button class="mb-3 w-1/2 text-light bg-info-500 rounded-lg p-2" type="submit">Send</button>
+      </div>
+    </form>
+  </div>

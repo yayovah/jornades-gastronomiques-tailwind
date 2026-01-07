@@ -1,0 +1,6 @@
+
+@mixin contrastat($fons: $valls-principal, $text: $valls-blanc) {
+  background-color: $fons;
+  color: $text;
+  border-color: $fons;
+}

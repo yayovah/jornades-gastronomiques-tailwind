@@ -1,0 +1,25 @@
+.c-sponsors{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    
+    img{
+        max-width:60px;
+        z-index:999;
+    }
+}
+
+.c-lloc{
+    padding: 32px;
+    border-radius: 24px;
+    background-color: $primary;
+    color: $secondary;
+    max-width: 300px;
+    position: relative;
+    top: -160px;
+    text-align: end;
+
+    h3{
+        font-family: $font-a-ma;
+    }
+}

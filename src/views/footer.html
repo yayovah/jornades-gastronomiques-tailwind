@@ -1,3 +1,38 @@
-<footer class="uoc-footer">
+<footer class="container-fluid px-4 py-5 bg-[#002a32] text-white text-center">
+
+  <!-- Primera part del footer -->
+  <include src="./views/contact-form.html"></include>
+ 
+  <!-- Segona part del footer -->
+
+  <hr class="w-full border border-[#3e5c63] border-3">
+
+  <div class="flex  flex-col sm:flex-row justify-between items-center p-6">
+    <include src="./views/logo.html"></include>
+    <nav class="justify-between text-[#ffffff8c]" data-bs-theme="dark">
+      <ul class="text-xl flex flex-col sm:flex-row gap-3">
+        <li class="">
+          <a class="" aria-current="page" href="#">Inici</a>
+        </li>
+        <li class="">
+          <a class="" href="./ponents.html">Ponents</a>
+        </li>
+        <li class="">
+          <a class="" href="./blog.html">Blog</a>
+        </li>
+        <li class="">
+          <a class="" href="./contacte.html">Contacte</a>
+        </li>
+      </ul>
+    </nav>
+    <div id="xarxes" class="container text-light text-center text-2xl sm:text-end m-y-5">
+      <i class="fa-solid fa-envelope fs-3"></i>
+      <i class="fa-solid fa-share-nodes fs-3 "></i>
+      <i class="fa-brands fa-instagram fs-3"></i>
+      <i class="fa-brands fa-facebook fs-3"></i>
+      <i class="fa-brands fa-google fs-3"></i>
+      <i class="fa-brands fa-tiktok fs-3"></i>
+    </div>
+  </div>
   &copy; Universitat Oberta de Catalunya
 </footer>

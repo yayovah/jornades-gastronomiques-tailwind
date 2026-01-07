@@ -1,0 +1,20 @@
+.c-card{
+    width:100%;
+
+    img{
+        height: 300px;
+        object-fit:cover;
+        object-position: top;
+    }
+
+
+    @include media-breakpoint-up(md) {
+        width: 300px;
+    }
+    @include media-breakpoint-up(lg) {
+        width: 270px;
+    }
+    @include media-breakpoint-up(xxl) {
+        width: 390px;
+    }
+}

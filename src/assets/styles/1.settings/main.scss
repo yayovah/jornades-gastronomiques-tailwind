@@ -1,0 +1,47 @@
+/**
+ * Use this file to import partials.
+ * Do not include SCSS code in this file.
+ */
+
+ /**
+ * Import dependencies
+ */
+ 
+ @layer setting, tools, generic, elements, objects, components, utilities;
+
+@import '1.settings/colors';
+@import '1.settings/typography';
+
+@import '2.tools/dependencies';
+@import '2.tools/mixins';
+
+/**
+ * Import layouts
+ * It's a best practice to use a different partial for each page
+ */
+
+
+@import '3.generic/reset';
+
+@import '4.elements/body';
+@import '4.elements/footer';
+
+
+
+@import '5.objects/cartell';
+@import '5.objects/taula_ponents';
+@import '5.objects/article';
+@import '5.objects/formulari';
+
+@import '6.components/logo';
+@import '6.components/card';
+@import '6.components/cartell-components';
+
+@import '7.utilities/extres';
+
+
+
+ 
+/**
+ * Do NOT include anything else in this file!
+ */
